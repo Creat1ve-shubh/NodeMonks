@@ -1,11 +1,13 @@
 import AboutUs from "@/components/Home/AboutUs";
 import ContactUs from "@/components/Home/ContactUs";
 import HeroSection from "@/components/Home/HeroSection";
+import Works from "@/components/Home/Works";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden ">
+    <div className="overflow-x-hidden scroll-smooth">
       <HeroSection />
+      <Works />
       <AboutUs />
       <ContactUs />
     </div>
