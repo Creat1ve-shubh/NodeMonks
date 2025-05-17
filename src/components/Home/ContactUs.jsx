@@ -14,20 +14,20 @@ export default function ContactUs() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("")
 
-        
+
     return (
-        <div id="contact" className="h-screen w-screen flex ">
-            <div className="h-full w-1/2 overflow-hidden blur-3xl">
+        <div id="contact" className="h-screen w-screen flex justify-center ">
+            <div className="h-full max-sm:absolute md:w-1/2 overflow-hidden blur-3xl">
                 <iframe src="https://my.spline.design/orangeblob-jOM0Derv1R7lQ6jCZZfrHVUJ/" height={"120%"} width={"120%"} />
             </div>
-            <div className="h-full w-1/2 flex flex-col justify-center items-center">
+            <div className="h-full max-sm:z-10 w-full md:w-1/2 flex flex-col justify-center items-center">
                 <h1 className={`${abrilFatface.className} text-5xl underline decoration-wavy decoration-amber-500`} > Get In Touch</h1>
                 <div className=" flex justify-evenly items-center gap-4 text-lg mt-7 ">
                     <Link href="mailto:shivanshsri.04@gmail.com" className=" p-2 rounded-lg bg-zinc-800 flex justify-center items-center gap-2"><FiMail color="orange" /> Mail Us</Link>
                     <Link href="tel:+918107991540" className="p-2 rounded-lg bg-zinc-800 flex gap-2 items-center justify-center"><FiPhone color="orange" /> Get On a Call</Link>
                 </div>
                 <div className="border-t-2 border-amber-500/60 h-1 w-1/3 m-4"></div>
-                <form className="flex flex-col w-1/2 gap-2">
+                <form className="flex flex-col w-4/5 rounded-2xl max-sm:bg-black/30 max-sm:p-8 lg:w-1/2 gap-2">
                     <h1 className="text-xl underline decoration-amber-500 mb-3">Leave a message</h1>
                     <div className="flex flex-col gap-1">
                         <label htmlFor="name">Name</label>
