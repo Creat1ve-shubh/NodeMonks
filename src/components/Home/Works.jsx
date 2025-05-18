@@ -1,4 +1,7 @@
 import { Josefin_Sans } from "next/font/google"
+import mockup from "../assets/mockup.jpg";
+import top from "../assets/top.jpg";
+
 
 const josefin = Josefin_Sans({
     subsets: ["latin"],
@@ -23,14 +26,16 @@ export default function Works() {
                                     Effortless Scanning & Labeling
                                 </p>
                                 <p className="mt-2 max-w-lg text-lg space text-orange-100  max-lg:text-center">
-                                    No more manual entry! Scan items instantly and generate smart labels with embedded data. Our intuitive interface ensures even non-technical staff can label and register inventory with ease.
+                                    No more manual entry! Scan items instantly and generate smart labels with embedded data.
+                                    Our intuitive interface ensures even non-technical staff can label and register inventory with ease.
                                 </p>
+
                             </div>
                             <div className="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
                                 <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                                     <img
                                         className="size-full object-cover object-top"
-                                        src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                                        src={mockup.src}
                                         alt=""
                                     />
                                 </div>
@@ -96,19 +101,22 @@ export default function Works() {
                                     <div className="flex bg-gray-800/40 ring-1 ring-white/5">
                                         <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
                                             <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">
-                                                NotificationSetting.jsx
+                                                Inventory
                                             </div>
-                                            <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                                            <div className="border-r border-gray-600/10 px-4 py-2">Home</div>
                                         </div>
                                     </div>
-                                    <div className="px-6 pt-6 pb-14">{/* Example code area */}</div>
+                                    <img className="" alt="" height="500%" width="100%"
+                                        src={top.src}></img>
                                 </div>
                             </div>
                         </div>
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
                     </div>
                 </div>
+
             </div>
-        </div>
+
+        </div >
     )
 }

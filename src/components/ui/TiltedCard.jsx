@@ -7,6 +7,15 @@ const springValues = {
     stiffness: 100,
     mass: 2,
 };
+const scaleIn = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+};
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+};
 
 export default function Card({
     imageSrc,
@@ -99,10 +108,24 @@ export default function Card({
                     rotateY,
                     scale,
                 }}
+                fadeIn="true"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                viewport={{ once: true, amount: 0.2 }}
+                onHoverStart={handleMouseEnter}
+                onHoverEnd={handleMouseLeave}
+                onClick={handleMouseLeave}
+
             >
                 <motion.img
                     src={imageSrc}
                     alt={altText}
+                    fadeIn="true"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
                     style={{
                         width: imageWidth,
@@ -112,6 +135,8 @@ export default function Card({
 
                 {displayOverlayContent && overlayContent && (
                     <motion.div
+                        variants={fadeInUp}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         className="absolute w-full h-1/2 bg-linear-to-t from-black to-transparent flex flex-col justify-end items-center top-1/2 left-0 z-[2]  will-change-transform [transform:translateZ(30px)]"
                     >
                         {overlayContent}
