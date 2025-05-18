@@ -47,7 +47,7 @@ const cardData = [
 
 export default function AboutUs() {
     return (
-        <div className="relative bg-grid vignette">
+        <div id="about" className="relative bg-grid vignette">
             <div className="flex flex-col my-20 items-center justify-center h-screen">
                 <div className="text-center text-white md:underline decoration-wavy mb-10 decoration-amber-500 text-4xl tracking-tight sm:text-6xl">
                     <span className={josefin.className}>The team</span>
