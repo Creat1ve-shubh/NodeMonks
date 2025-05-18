@@ -8,8 +8,8 @@ const josefin = Josefin_Sans({
 export default function Works() {
     return (
         <div id="work">
-            <div className="mx-auto max-w-2xl mt-10 px-6 lg:max-w-7xl lg:px-8">
-                <div className="text-center text-white md:underline decoration-wavy decoration-amber-500 text-4xl tracking-tight sm:text-6xl">
+            <div className="mx-auto max-w-2xl mt-10 px-6 py-20 lg:max-w-7xl lg:px-8">
+                <div className="text-center text-white underline decoration-wavy decoration-amber-500 text-4xl tracking-tight sm:text-6xl">
                     <span className={josefin.className}>Your next favourite product</span>
                 </div>
 
