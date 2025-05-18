@@ -112,7 +112,7 @@ export default function Card({
 
                 {displayOverlayContent && overlayContent && (
                     <motion.div
-                        className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]"
+                        className="absolute w-full h-1/2 bg-linear-to-t from-black to-transparent flex flex-col justify-end items-center top-1/2 left-0 z-[2]  will-change-transform [transform:translateZ(30px)]"
                     >
                         {overlayContent}
                     </motion.div>
