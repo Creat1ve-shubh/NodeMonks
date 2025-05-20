@@ -126,7 +126,7 @@ export default function Card({
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                     viewport={{ once: true, amount: 0.2 }}
-                    className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+                    className="absolute grayscale top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
                     style={{
                         width: imageWidth,
                         height: imageHeight,
