@@ -11,8 +11,8 @@ const josefin = Josefin_Sans({
 const cardData = [
     {
         imageSrc: srivastava.src,
-        altText: "Kendrick Lamar - GNX Album Cover",
-        captionText: "Kendrick Lamar - GNX",
+        altText: "Team Member - Shivansh Srivastava",
+        captionText: "Team Member",
         overlayContent: (
             <p className={`${josefin.className} text-2xl text-center p-2`}>
                 <span className="underline decoration-wavy decoration-amber-500">Shivansh Srivastava</span> <br />
@@ -22,8 +22,8 @@ const cardData = [
     },
     {
         imageSrc: shubh.src,
-        altText: "Kendrick Lamar - GNX Album Cover",
-        captionText: "Kendrick Lamar - GNX",
+        altText: "Team Member - Shubh Shrivastava",
+        captionText: "Team Member",
         overlayContent: (
             <p className={`${josefin.className} text-2xl text-center p-2`}>
                 <span className="underline decoration-wavy decoration-amber-500">Shubh Shrivastava</span> <br />
